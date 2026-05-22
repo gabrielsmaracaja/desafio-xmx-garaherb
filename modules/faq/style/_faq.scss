@@ -1,0 +1,242 @@
+.faq-module {
+  height: 1219px;
+  max-height: 1219px;
+  padding: 50px 0 64px;
+  overflow: hidden;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-module__container {
+  display: grid;
+  justify-items: center;
+  gap: 33px;
+}
+
+.faq-module__header {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.faq-module__eyebrow {
+  margin: 0;
+  margin-top: 12px;
+  color: #f7c417;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-module__title {
+  width: min(100%, 568px);
+  margin: 0;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.faq-module__content {
+  display: grid;
+  justify-items: center;
+  gap: 26px;
+  width: 100%;
+}
+
+.faq-module__list {
+  display: grid;
+  gap: 11px;
+  width: min(100%, 934px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-module__item {
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.faq-module__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 68px;
+  padding: 16px;
+  border: 0;
+  background: #ffffff;
+  color: #0b0b0b;
+  text-align: left;
+}
+
+.faq-module__question {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.faq-module__icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.faq-module__icon::before,
+.faq-module__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: #161616;
+  transition: transform 0.2s ease;
+}
+
+.faq-module__icon::before {
+  transform: translate(-85%, -50%) rotate(45deg);
+}
+
+.faq-module__icon::after {
+  transform: translate(-15%, -50%) rotate(-45deg);
+}
+
+.faq-module__item.is-open .faq-module__icon::before {
+  transform: translate(-85%, -50%) rotate(-45deg);
+}
+
+.faq-module__item.is-open .faq-module__icon::after {
+  transform: translate(-15%, -50%) rotate(45deg);
+}
+
+.faq-module__answer {
+  padding: 0 16px 16px;
+  color: #4d4d4d;
+}
+
+.faq-module__answer p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.faq-module__cta {
+  min-width: 0;
+  width: min(100%, 352px);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 18px 30px;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 6px 0 #8b6a00;
+}
+
+.faq-module__cta:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 5px 0 #8b6a00;
+}
+
+.faq-module__figure {
+  width: min(100%, 938px);
+  margin: 0;
+}
+
+.faq-module__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1080px) {
+  .faq-module {
+    height: auto;
+    max-height: none;
+    padding: 56px 0 72px;
+  }
+
+  .faq-module__list {
+    width: min(100%, 100%);
+  }
+
+  .faq-module__question {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  .faq-module {
+    padding: 48px 0 56px;
+  }
+
+  .faq-module__container {
+    gap: 28px;
+  }
+
+  .faq-module__header {
+    gap: 12px;
+  }
+
+  .faq-module__eyebrow {
+    font-size: 20px;
+  }
+
+  .faq-module__title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .faq-module__content {
+    gap: 22px;
+  }
+
+  .faq-module__list {
+    gap: 10px;
+  }
+
+  .faq-module__trigger {
+    min-height: 62px;
+  }
+
+  .faq-module__question {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .faq-module {
+    padding: 40px 0 48px;
+  }
+
+  .faq-module__title {
+    font-size: 28px;
+  }
+
+  .faq-module__trigger {
+    align-items: flex-start;
+    min-height: 0;
+  }
+
+  .faq-module__question {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .faq-module__cta {
+    width: min(100%, 320px);
+    padding-inline: 24px;
+  }
+}

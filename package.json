@@ -1,0 +1,13 @@
+{
+  "name": "garaherb",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:styles": "sass assets/styles/main.scss assets/styles/main.css --no-source-map --style=expanded",
+    "watch:styles": "sass --watch assets/styles/main.scss assets/styles/main.css --style=expanded",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
