@@ -1097,7 +1097,7 @@ button {
     display: none;
   }
   .preco-module__body {
-    padding-top: 56px;
+    padding: 56px 0 40px;
   }
   .preco-module__cards {
     flex-direction: column;
@@ -1279,7 +1279,7 @@ button {
   }
   .sobre-module__badge {
     top: 14px;
-    right: 100px;
+    right: 58px;
     width: clamp(88px, 24vw, 124px);
   }
   .sobre-module__title {
@@ -1301,7 +1301,7 @@ button {
   }
   .sobre-module__badge {
     top: 12px;
-    right: 90px;
+    right: 56px;
     width: 92px;
   }
   .sobre-module__ellipse {
