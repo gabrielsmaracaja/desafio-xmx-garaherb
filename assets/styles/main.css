@@ -574,9 +574,9 @@ button {
     opacity: 0.28;
   }
   .hero-module .hero-module__bolt {
-    top: 4px;
-    width: min(104%, 392px);
-    transform: translateX(-57%);
+    top: -22px;
+    width: min(500%, 700px);
+    transform: translateX(-54%);
   }
   .hero-module .hero-module__product-stack {
     bottom: 12px;
