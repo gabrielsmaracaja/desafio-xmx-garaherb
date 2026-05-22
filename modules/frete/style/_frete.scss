@@ -1,0 +1,123 @@
+.frete-module {
+  background: #f7c417;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    min-height: 176px;
+  }
+
+  &__icon {
+    flex: 0 0 254px;
+
+    img,
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 8px;
+    max-width: 891px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #0f0f0f;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0;
+    text-align: center;
+
+    strong {
+      color: #666666;
+      font-weight: 600;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: #0f0f0f;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1181px) {
+  .frete-module {
+    max-height: 176px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .frete-module {
+    padding: 28px 0;
+
+    &__container {
+      gap: 28px;
+      min-height: 0;
+    }
+
+    &__icon {
+      flex-basis: 220px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 1.25;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 1.35;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .frete-module {
+    &__container {
+      flex-direction: column;
+      gap: 18px;
+      padding: 4px 0;
+    }
+
+    &__icon {
+      flex-basis: auto;
+      width: min(100%, 210px);
+    }
+
+    &__content {
+      gap: 10px;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .frete-module {
+    padding: 24px 0;
+
+    &__title {
+      font-size: 27px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}

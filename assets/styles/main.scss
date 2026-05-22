@@ -1,0 +1,15 @@
+@use './abstracts/tokens';
+@use './base/reset';
+@use './base/globals';
+@use './modules/placeholder';
+@use '../../modules/hero/style/hero';
+@use '../../modules/ingredientes/style/ingredientes';
+@use '../../modules/preco/style/preco';
+@use '../../modules/sobre/style/sobre';
+@use '../../modules/beneficios/style/beneficios';
+@use '../../modules/depoimento/style/depoimento';
+@use '../../modules/frete/style/frete';
+@use '../../modules/oferta/style/oferta';
+@use '../../modules/faq/style/faq';
+@use '../../modules/barra-rodape/style/barra-rodape';
+@use '../../modules/footer/style/footer';

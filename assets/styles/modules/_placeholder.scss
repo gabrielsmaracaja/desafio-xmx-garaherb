@@ -1,0 +1,35 @@
+.module-placeholder {
+  padding: clamp(4rem, 8vw, 6.5rem) 0;
+  border-top: 1px solid var(--color-line-soft);
+  background: #ffffff;
+}
+
+.module-placeholder:nth-of-type(even) {
+  background: #f6f6f6;
+}
+
+.module-placeholder__content {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 34rem;
+}
+
+.module-placeholder__index {
+  color: var(--color-accent-strong);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.module-placeholder h2 {
+  color: var(--color-text-strong);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1;
+}
+
+.module-placeholder p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
