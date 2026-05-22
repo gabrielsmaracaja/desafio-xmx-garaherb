@@ -1,6 +1,11 @@
 # garaherb
 Solução natural para vitalidade masculina
 
+## Links do projeto
+
+- Ambiente publicado na Vercel: https://desafio-xmx-garaherb-test.vercel.app
+- Vídeo no YouTube: https://youtu.be/BV0ucgLP2AM
+
 ## Estrutura da landing page
 
 - `/index.html`: shell principal da página, com slots para montagem dos módulos.
