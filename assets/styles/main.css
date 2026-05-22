@@ -8,8 +8,8 @@
   --color-line-soft: rgba(17, 17, 17, 0.08);
   --radius-sm: 0.9rem;
   --container-width: 1220px;
-  --font-body: 'Inter', 'Segoe UI', sans-serif;
-  --font-display: 'Outfit', 'Segoe UI', sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-display: "Outfit", "Segoe UI", sans-serif;
 }
 
 html {
@@ -140,13 +140,22 @@ button {
   position: relative;
   height: var(--hero-height-fullhd);
   overflow: hidden;
-  background: linear-gradient(90deg, #1f0b0a 0%, #220a09 34%, #41120d 61%, #982b19 100%), #140707;
+  background:
+    linear-gradient(90deg, #1f0b0a 0%, #220a09 34%, #41120d 61%, #982b19 100%),
+    #140707;
 }
 .hero-module::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 75% 26%, rgba(255, 177, 47, 0.1), transparent 9%), linear-gradient(90deg, rgba(13, 6, 6, 0) 0%, rgba(110, 27, 17, 0.14) 44%, rgba(188, 47, 24, 0.52) 100%);
+  background:
+    radial-gradient(circle at 75% 26%, rgba(255, 177, 47, 0.1), transparent 9%),
+    linear-gradient(
+      90deg,
+      rgba(13, 6, 6, 0) 0%,
+      rgba(110, 27, 17, 0.14) 44%,
+      rgba(188, 47, 24, 0.52) 100%
+    );
   pointer-events: none;
 }
 .hero-module.is-ready .hero-module__content {
@@ -156,7 +165,9 @@ button {
 .hero-module__mesh {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
   background-size: 44px 44px;
   opacity: 0.72;
   pointer-events: none;
@@ -177,7 +188,9 @@ button {
   color: #ffffff;
   opacity: 0;
   transform: translateY(1rem);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
 }
 .hero-module__eyebrow {
   display: inline-flex;
@@ -280,7 +293,9 @@ button {
   padding: 22px 31px;
   border-radius: 999px;
   background: linear-gradient(180deg, #fff03a 0%, #ffd90c 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 8px 0 #654300;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 8px 0 #654300;
   color: #181100;
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -290,7 +305,9 @@ button {
 }
 .hero-module__cta:hover {
   transform: translateY(1px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 7px 0 #654300;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 7px 0 #654300;
 }
 .hero-module__cta-icon {
   width: 28px;
@@ -302,7 +319,13 @@ button {
   height: 100%;
   overflow: hidden;
 }
-.hero-module__backlight, .hero-module__ellipse, .hero-module__bolt, .hero-module__man, .hero-module__product-stack, .hero-module__product-glow, .hero-module__product {
+.hero-module__backlight,
+.hero-module__ellipse,
+.hero-module__bolt,
+.hero-module__man,
+.hero-module__product-stack,
+.hero-module__product-glow,
+.hero-module__product {
   position: absolute;
   max-width: none;
   user-select: none;
@@ -690,13 +713,17 @@ button {
   margin-top: 52px;
   padding: 17px 29px 16px;
   gap: 11px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 5px 0 #bf9200;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 5px 0 #bf9200;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0;
 }
 .ingredientes-module__cta:hover {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 4px 0 #bf9200;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 4px 0 #bf9200;
 }
 .ingredientes-module__cta-icon {
   width: 24px;
@@ -851,7 +878,9 @@ button {
   flex: 0 0 var(--preco-card-width);
   opacity: 0;
   transform: translateY(1rem);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
 }
 
 .preco-module.is-ready .preco-module__card {
@@ -1011,7 +1040,9 @@ button {
   padding: 15px 18px;
   border-radius: 999px;
   background: linear-gradient(180deg, #fff03a 0%, #ffd90c 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 7px 0 #7a5400;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 7px 0 #7a5400;
   color: #181100;
   font-family: "Inter", sans-serif;
   font-size: 22px;
@@ -1020,12 +1051,16 @@ button {
   text-decoration: none;
   letter-spacing: 0.5px;
   margin-bottom: 16px;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
 }
 
 .preco-module__btn:hover {
   transform: translateY(2px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 5px 0 #7a5400;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 5px 0 #7a5400;
 }
 
 .preco-module__btn-text {
@@ -1138,13 +1173,21 @@ button {
   position: relative;
   height: 641px;
   overflow: hidden;
-  background: linear-gradient(90deg, #020202 0%, #020202 61%, #070202 80%, #120302 100%), #020202;
+  background:
+    linear-gradient(90deg, #020202 0%, #020202 61%, #070202 80%, #120302 100%),
+    #020202;
 }
 .sobre-module::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 84% 52%, rgba(188, 47, 24, 0.14), transparent 30%), linear-gradient(90deg, rgba(0, 0, 0, 0) 54%, rgba(58, 8, 4, 0.28) 100%);
+  background:
+    radial-gradient(
+      circle at 84% 52%,
+      rgba(188, 47, 24, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 54%, rgba(58, 8, 4, 0.28) 100%);
   pointer-events: none;
 }
 .sobre-module__container {
@@ -1169,7 +1212,31 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #020202 0%, rgba(2, 2, 2, 0.92) 7%, rgba(2, 2, 2, 0.28) 16%, rgba(2, 2, 2, 0) 28%, rgba(2, 2, 2, 0) 72%, rgba(2, 2, 2, 0.38) 84%, rgba(2, 2, 2, 0.9) 94%, #020202 100%), linear-gradient(180deg, #020202 0%, rgba(2, 2, 2, 0.96) 0%, rgba(2, 2, 2, 0.58) 10%, rgba(2, 2, 2, 0.12) 34%, rgba(2, 2, 2, 0) 46%, rgba(2, 2, 2, 0) 58%, rgba(2, 2, 2, 0.12) 80%, rgba(2, 2, 2, 0.52) 90%, rgba(2, 2, 2, 0.94) 100%, #020202 100%);
+  background:
+    linear-gradient(
+      90deg,
+      #020202 0%,
+      rgba(2, 2, 2, 0.92) 7%,
+      rgba(2, 2, 2, 0.28) 16%,
+      rgba(2, 2, 2, 0) 28%,
+      rgba(2, 2, 2, 0) 72%,
+      rgba(2, 2, 2, 0.38) 84%,
+      rgba(2, 2, 2, 0.9) 94%,
+      #020202 100%
+    ),
+    linear-gradient(
+      180deg,
+      #020202 0%,
+      rgba(2, 2, 2, 0.96) 0%,
+      rgba(2, 2, 2, 0.58) 10%,
+      rgba(2, 2, 2, 0.12) 34%,
+      rgba(2, 2, 2, 0) 46%,
+      rgba(2, 2, 2, 0) 58%,
+      rgba(2, 2, 2, 0.12) 80%,
+      rgba(2, 2, 2, 0.52) 90%,
+      rgba(2, 2, 2, 0.94) 100%,
+      #020202 100%
+    );
   pointer-events: none;
 }
 .sobre-module__image {
@@ -1315,17 +1382,28 @@ button {
   position: relative;
   height: 615px;
   overflow: hidden;
-  background: radial-gradient(circle at 24% 48%, rgba(255, 255, 255, 0.06), transparent 26%), linear-gradient(90deg, #040404 0%, #040404 55%, #070707 76%, #0a0a0a 100%);
+  background:
+    radial-gradient(
+      circle at 24% 48%,
+      rgba(255, 255, 255, 0.06),
+      transparent 26%
+    ),
+    linear-gradient(90deg, #040404 0%, #040404 55%, #070707 76%, #0a0a0a 100%);
   font-family: "Inter", sans-serif;
 }
 .beneficios-module::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.32) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.32) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%);
   pointer-events: none;
 }
-.beneficios-module__grid, .beneficios-module__photo, .beneficios-module__lightning, .beneficios-module__product {
+.beneficios-module__grid,
+.beneficios-module__photo,
+.beneficios-module__lightning,
+.beneficios-module__product {
   max-width: none;
   user-select: none;
   pointer-events: none;
@@ -1349,7 +1427,15 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #040404 0%, rgba(4, 4, 4, 0.62) 14%, rgba(4, 4, 4, 0.14) 38%, rgba(4, 4, 4, 0.32) 100%), linear-gradient(180deg, rgba(4, 4, 4, 0.01) 0%, rgba(4, 4, 4, 0.24) 100%);
+  background:
+    linear-gradient(
+      90deg,
+      #040404 0%,
+      rgba(4, 4, 4, 0.62) 14%,
+      rgba(4, 4, 4, 0.14) 38%,
+      rgba(4, 4, 4, 0.32) 100%
+    ),
+    linear-gradient(180deg, rgba(4, 4, 4, 0.01) 0%, rgba(4, 4, 4, 0.24) 100%);
   pointer-events: none;
 }
 .beneficios-module__photo {
@@ -1388,7 +1474,11 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.24) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -1712,7 +1802,9 @@ button {
   padding: 17px 24px;
   gap: 12px;
   font-size: 20px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 6px 0 #927400;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 6px 0 #927400;
 }
 .depoimento-module__cta-icon {
   width: 24px;
@@ -2053,7 +2145,12 @@ button {
   padding: 32px 48px 32px 30px;
   border: 1px solid #5a6e73;
   border-radius: 20px;
-  background: linear-gradient(80.21deg, #0b0b0b 0.53%, #1a0d0c 54.96%, #aa2315 99.6%);
+  background: linear-gradient(
+    80.21deg,
+    #0b0b0b 0.53%,
+    #1a0d0c 54.96%,
+    #aa2315 99.6%
+  );
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
 }
 .oferta-module__guarantee-media {
@@ -2094,7 +2191,9 @@ button {
   padding: 18px 34px;
   gap: 12px;
   font-size: 20px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 6px 0 #6b4900;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 6px 0 #6b4900;
 }
 .oferta-module__guarantee-button-icon {
   width: 22px;
@@ -2102,7 +2201,9 @@ button {
   flex: 0 0 auto;
 }
 .oferta-module__guarantee-button:hover {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 5px 0 #6b4900;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 5px 0 #6b4900;
 }
 @media (max-width: 1240px) {
   .oferta-module {
@@ -2267,7 +2368,8 @@ button {
     width: 150px;
     height: auto;
   }
-  .oferta-module__reviews-score, .oferta-module__reviews-meta {
+  .oferta-module__reviews-score,
+  .oferta-module__reviews-meta {
     font-size: 16px;
   }
   .oferta-module__guarantee-title {
@@ -2424,11 +2526,15 @@ button {
   gap: 12px;
   font-size: 18px;
   font-weight: 700;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 6px 0 #8b6a00;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 6px 0 #8b6a00;
 }
 
 .faq-module__cta:hover {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 5px 0 #8b6a00;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 5px 0 #8b6a00;
 }
 
 .faq-module__figure {
@@ -2537,7 +2643,10 @@ button {
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  transition: color 0.2s ease, font-size 0.2s ease, text-shadow 0.2s ease;
+  transition:
+    color 0.2s ease,
+    font-size 0.2s ease,
+    text-shadow 0.2s ease;
 }
 .footer-links-bar__item:hover {
   font-size: 20.1px;
