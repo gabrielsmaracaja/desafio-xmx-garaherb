@@ -1182,6 +1182,17 @@ button {
   transform: scale(1.2);
   transform-origin: center;
 }
+.sobre-module__badge {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 2;
+  width: clamp(100px, 12vw, 120px);
+  max-width: 32%;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.35));
+  pointer-events: none;
+  user-select: none;
+}
 .sobre-module__content {
   position: relative;
   z-index: 2;
@@ -1237,6 +1248,11 @@ button {
     height: 380px;
     min-height: 380px;
   }
+  .sobre-module__badge {
+    top: 20px;
+    right: 60px;
+    width: clamp(100px, 18vw, 140px);
+  }
   .sobre-module__content {
     max-width: 560px;
   }
@@ -1261,6 +1277,11 @@ button {
     height: 290px;
     min-height: 290px;
   }
+  .sobre-module__badge {
+    top: 14px;
+    right: 100px;
+    width: clamp(88px, 24vw, 124px);
+  }
   .sobre-module__title {
     max-width: 100%;
   }
@@ -1277,6 +1298,11 @@ button {
   .sobre-module__media {
     height: 220px;
     min-height: 220px;
+  }
+  .sobre-module__badge {
+    top: 12px;
+    right: 90px;
+    width: 92px;
   }
   .sobre-module__ellipse {
     right: -210px;
