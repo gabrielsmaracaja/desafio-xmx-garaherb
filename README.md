@@ -59,5 +59,5 @@ diretamente em `file://` não é suficiente.
 
 - Implementação sem frameworks, usando HTML fragmentado por módulo, JavaScript nativo e Sass.
 - `index.html` reduzido a shell de composição, sem lógica visual acoplada.
-- Todos os módulos estão em placeholder textual, para que a construção visual volte a acontecer um por um.
-- Os estilos foram reduzidos a base compartilhada e placeholders, removendo arquivos órfãos e código não utilizado.
+- Organização modular por seção da landing page, com fragmentos HTML, estilos por módulo e inicialização JavaScript apenas onde necessário.
+- Node é usado somente como tooling de desenvolvimento para compilar Sass; a entrega final continua sendo uma página estática em HTML, CSS e JavaScript.

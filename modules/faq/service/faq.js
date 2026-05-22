@@ -15,9 +15,10 @@ export function initFaq(root) {
       return;
     }
 
-    if (item.classList.contains('is-open')) {
-      answer.hidden = true;
-    }
+    const isOpen = item.classList.contains('is-open');
+
+    trigger.setAttribute('aria-expanded', String(isOpen));
+    answer.hidden = !isOpen;
 
     trigger.addEventListener('click', () => {
       const willOpen = answer.hidden;
